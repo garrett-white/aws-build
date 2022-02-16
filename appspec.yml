@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: logstash/config/logstash.yml
+    destination: /etc/logstash/logstash.yml
+  - source: logstash/pipeline
+    destination: /etc/logstash/conf.d
+file_exists_behavior: OVERWRITE
